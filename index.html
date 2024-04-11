@@ -3,30 +3,16 @@
 <head>
     <title>En Busca del Templo Perdido</title>
     <script>
-        function playGame(map) {
-            window.open(map + '.html', '_blank');
-            window.close('TemploPerdidoMapa');
+        function playGame() {
+            window.location.href = 'medioevo.html';
         }
     </script>
 </head>
 <body>
     <h1>En Busca del Templo Perdido</h1>
-    <video id="introVideo" width="640" height="480" controls autoplay muted onended="showMapSelection()"> 
-        <source src="elon-3.mp4" type="video/mp4">
+    <video id="introVideo" width="640" height="480" controls autoplay muted onended="playGame()"> 
+        <source src="juego.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
-    <div id="mapSelection" style="display: none;">
-        <p>¿Qué mapa quieres ejecutar?</p>
-        <button onclick="playGame('medioevo')">templo perdido</button>
-        </div>
-    <script>
-        function showMapSelection() {
-            document.getElementById('mapSelection').style.display = 'block';
-        }
-        function playGame() {
-     window.open('medioevo.html', '_blank');
-    window.close();
-     }
-    </script>
 </body>
 </html>
