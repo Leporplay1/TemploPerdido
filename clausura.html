@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Llegaste al final del camino.
+
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap'); /* Importa la fuente Cinzel de Google Fonts, que tiene un estilo medieval */
+
+        body {
+            background-image: url('medioevo.png');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: gold; /* Cambia el color del texto a dorado */
+            font-family: 'Cinzel', serif; /* Usa la fuente Cinzel para el texto */
+            background: url('tabla.png'); /* Usa una imagen de una tabla de madera envejecida como fondo */
+            background-size: cover; /* Asegura que la imagen de fondo cubra todo el elemento */
+            padding: 20px; /* Agrega algo de espacio alrededor del texto */
+            border-radius: 15px; /* Desgasta los contornos de la tabla de madera */
+            text-shadow: 3px 3px 0 #000, /* Sombra horizontal y vertical */
+                         -1px -1px 0 #000, /* Sombra superior izquierda */
+                         1px -1px 0 #000, /* Sombra superior derecha */
+                         -1px 1px 0 #000, /* Sombra inferior izquierda */
+                         1px 1px 0 #000; /* Sombra inferior derecha */
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+        img {
+            position: absolute;
+            top: 328px;
+            left: 557px;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+        function cerrarPagina() {
+            setTimeout(function() {
+                window.close();
+            }, 10000); // Cierra la página después de 10 segundos
+        }
+    </script>
+</head>
+<body onload="cerrarPagina()">
+    <h1>Llegaste al final del camino<br>Recibe la orden de Caballero FP</h1> <!-- El título ahora está en dos líneas -->
+    <audio src="juego.mp3" autoplay></audio>
+    <img src="caballero.gif" alt="">
+</body>
+</html>
